@@ -1,0 +1,9 @@
+spring:
+  r2dbc:
+    username: ${DATABASE_USER:postgres}
+    password: ${DATABASE_PASSOWRD:postgres}
+    url: ${DATABASE_URL:r2dbc:postgresql://localhost:5432/api}
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger
